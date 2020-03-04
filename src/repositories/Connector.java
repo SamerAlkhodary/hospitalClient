@@ -37,8 +37,6 @@ public class Connector implements Client {
       objectSender = new ObjectOutputStream(socket.getOutputStream());
       objectReciever= new ObjectInputStream(socket.getInputStream());
 
-
-
   }
   private void socketBuilder()throws Exception{
 
@@ -128,5 +126,16 @@ public class Connector implements Client {
     }
 
     return response;
+  }
+
+  @Override
+  public void setupConnection() {
+    try {
+      init();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
+
   }
 }

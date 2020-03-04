@@ -13,13 +13,16 @@ public class LoginState extends State {
   @Override
   public void render() {
     // console.printf("%s", "log in\n");
-    System.out.println("login please:");
+    System.out.println("login please");
   }
 
   @Override
   public void run(StateHandler stateHandler) {
     //String name = console.readLine("%s", "name: ");
     //  char[] password = console.readPassword("%s", "password: ");
+    System.out.println("Press 'Enter' after adding your key!");
+     new Scanner(System.in).next();
+     this.userRepo.setupConnection();
     System.out.print("user name: ");
     String name= new Scanner(System.in).nextLine();
     System.out.print("password: ");

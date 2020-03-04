@@ -12,6 +12,7 @@ public interface Repository {
   RemoveResponse removePatient(Government issuer, Patient patient);
     CreatePatientResponse createPatient(Doctor issuer, Patient patient);
     UpdateResponse updatePatient(Doctor issuer, Patient patient);
+    void setupConnection();
 
 
 

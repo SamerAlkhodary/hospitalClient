@@ -35,5 +35,10 @@ public class UserRepository implements Repository {
     return client.updatePatient(new UpdateRequest(issuer, patient));
   }
 
+  @Override
+  public void setupConnection() {
+    client.setupConnection();
+  }
+
 
 }

@@ -8,6 +8,7 @@ public interface Client {
     RemoveResponse removePatient(RemoveRequest removeRequest);
     CreatePatientResponse createPatient(CreatePatientRequest createPatientRequest);
     UpdateResponse updatePatient(UpdateRequest updateRequest);
+    void setupConnection();
 
 
 }
