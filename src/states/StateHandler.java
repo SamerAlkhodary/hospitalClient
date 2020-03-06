@@ -11,11 +11,11 @@ public class StateHandler {
 
   public StateHandler() {
 
-    states.put("login", new LoginState());
-    states.put("patientstate", new PatientState());
-    states.put("doctorstate", new DoctorState());
-    states.put("nursestate", new NurseState());
-    states.put("governmentstate", new GovernmentState());
+    states.put(LoginState.name, new LoginState());
+    states.put(PatientState.name, new PatientState());
+    states.put(DoctorState.name, new DoctorState());
+    states.put(NurseState.name, new NurseState());
+    states.put(GovernmentState.name, new GovernmentState());
   }
 
   public void changeState(String state, Entity user) {

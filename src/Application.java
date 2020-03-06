@@ -10,7 +10,6 @@ public class Application {
 
 
     Client connector= Connector.client;
-    System.out.println("here");
 
 
     while (true) {

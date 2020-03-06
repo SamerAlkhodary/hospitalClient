@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class GovernmentState extends  State {
+    public final  static  String name= "GovernmentState";
     private List<String > options;
     public  GovernmentState(){
         options= new LinkedList<>();

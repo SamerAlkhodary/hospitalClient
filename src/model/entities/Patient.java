@@ -3,6 +3,8 @@ package model.entities;
 import model.Record;
 
 public class Patient extends  Entity {
+    public final  static  String role= "PATIENT";
+
     private Record record;
 
     public Patient(int id, String name, String division, String role) {

@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class DoctorState extends State {
+    public final  static  String name= "DctorState";
     private List <String>options;
     private Doctor doctor;
     public DoctorState(){
@@ -72,7 +73,7 @@ public class DoctorState extends State {
                 System.out.println("Good bye!");
                 System.out.print("\033\143");
                 this.user=null;
-                stateHandler.changeState("login",null);
+                stateHandler.changeState(LoginState.name,null);
                 break;
             default:
                 System.out.println("Invalid input");

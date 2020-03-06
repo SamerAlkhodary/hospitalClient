@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class NurseState extends State {
+    public final  static  String name= "NurseState";
     private List options;
     private Nurse nurse;
     public  NurseState(){
@@ -40,7 +41,8 @@ public class NurseState extends State {
                 System.out.println("Good bye!");
                 System.out.print("\033\143");
                 this.user=null;
-                stateHandler.changeState("login",null);
+               
+                stateHandler.changeState(LoginState.name,null);
 
                 break;
         }
