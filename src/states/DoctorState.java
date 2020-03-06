@@ -19,7 +19,6 @@ public class DoctorState extends State {
 
         options= new LinkedList<>();
         options.add("1- view all records");
-        options.add("2- create a record");
         options.add("3- list my patients");
         options.add("4- Create Patient");
         options.add("5- update patient");

@@ -37,6 +37,7 @@ public class LoginState extends State {
       System.out.println(result.getMessage());
     }
     else {
+
       switch (result.getEntity().getRole().toUpperCase()){
         case Doctor.role:  stateHandler.changeState(DoctorState.name,result.getEntity());break;
         case Government.role: stateHandler.changeState(GovernmentState.name,result.getEntity());break;

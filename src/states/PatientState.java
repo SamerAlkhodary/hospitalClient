@@ -35,7 +35,7 @@ public class PatientState extends State {
         System.out.println("Good bye!");
         System.out.print("\033\143");
         this.user=null;
-       
+
         stateHandler.changeState(LoginState.name,null);
     }
   }
